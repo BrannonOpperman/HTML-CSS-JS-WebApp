@@ -1,0 +1,107 @@
+<!--AUTHOR DATE WEBSITE LINK-->
+<!--DESCRIPTION-->
+
+<!DOCTYPE html>
+<html>
+
+    <!--Links this index to the style sheet as well as to a library used for the creation of the stars-->
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <title>Zaio Website</title>
+    </head>
+
+    <body>
+
+        <!--Used to wrap all the code in the body for centering-->
+        <div id="content">
+
+        <h1>HICKIES Originals</h1>
+
+        <!--Creates the stars and review line-->
+        <div id="rating">
+        <div>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        </div>
+        <p>1,293 reviews</p>
+        </div>
+
+        <br>
+
+        <!--Commmenting from here !!!!!!!!!!!!!-->
+        <div id="price">
+        <h2 id="price" style="color: #D15567"><strong>$14.99</strong></h2>
+        <p><strong>$17.99</strong></p>
+        <p><strong>25% OFF</strong></p>
+        </div>
+
+        
+        <div id="online"> <p>ONLINE EXCLUSIVE</p> </div>
+
+
+        <div id="colourHeading"><p><strong>COLOR:</strong></p></div>
+
+        <div id="circles">
+        <span class="dot first" style="background-color: #c62930;"></span>
+        <span class="dot second" style="background-color: #6327f4;"></span>
+        <span class="dot third" style="background-color: black;"></span>
+        <span class="dot fourth" style="background-color: white;"></span>
+        <span class="dot fifth" style="background-color: #ef8130;"></span>
+        <span class="dot sixth" style="background-color: #fef450;"></span>
+        <span class="dot seventh" style="background-color: #1d53ae;"></span>
+        <span class="dot eighth" style="background-color: #285a7b;"></span>
+        <span class="dot nineth" style="background-color: #dab595;"></span>
+        <span class="dot tenth" style="background-color: #54c0f9;"></span>
+        <span class="dot eleventh" style="background-color: #90fa4d;"></span>
+        <br>
+        <span class="dot twelfth" style="background-color: #ea37b3;"></span>
+        <span class="dot thirteenth" style="background-color: #dab595;"></span>
+        <span class="dot fourteenth" style="background-color: #418d65;"></span>
+        <span class="dot fifteenth" style="background-color: #6f6975;"></span>
+        <span class="dot sixteenth" style="background-color: #6e502b;"></span>
+        <span class="dot seventeenth" style="background-color: #69dad1;"></span>
+        <span class="dot eighteenth" style="background-color: #c4c4c4;"></span>
+        </div>
+
+        <h5><strong>Size Guide</strong></h5>
+        <h5><strong>Your Custom Fit</strong></h5>
+
+        <div id="btn">
+        <!-- Trigger/Open the Modal -->
+        <button onclick="document.getElementById('modal').style.display='block'"
+        class="w3-button">Add To Cart</button>
+        </div>
+
+        <!-- The Modal -->
+        <div id="modal" class="w3-modal">
+        <div class="w3-modal-content">
+            <div class="w3-container">
+            <span onclick="document.getElementById('modal').style.display='none'"
+            class="w3-button w3-display-topright">&times;</span>
+            <p>Please add the quantity of the item you have selected</p>
+            <p>Text to add later</p>
+            </div>
+        </div>
+        </div>
+
+
+        <hr>
+
+        <h4><strong>DETAILS</strong></h4>
+        
+        <hr>
+        
+        <h5><strong>Need Help?</strong></h5>
+        <h5><strong>Shipping & Returns</strong></h5>
+
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
