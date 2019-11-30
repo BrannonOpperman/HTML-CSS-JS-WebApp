@@ -1,6 +1,9 @@
-<!--AUTHOR DATE WEBSITE LINK-->
-<!--DESCRIPTION-->
+<!--AUTHOR: Brannon Opperman
+    DATE OF LAST EDIT: 30 November 2019
+    WEBSITE LINK: https://zaioass1.000webhostapp.com
+-->
 
+<!--A basic shopping cart type website-->
 <!DOCTYPE html>
 <html>
 
@@ -13,12 +16,9 @@
         <title>Zaio Website</title>
     </head>
 
-    <body>
+    <body class="font">
 
-        <!--Used to wrap all the code in the body for centering-->
-        <div id="content">
-
-        <h1>HICKIES Originals</h1>
+        <h1><Strong>HICKIES Originals</Strong></h1>
 
         <!--Creates the stars and review line-->
         <div id="rating">
@@ -34,20 +34,19 @@
 
         <br>
 
-        <!--Commmenting from here !!!!!!!!!!!!!-->
+        <!--Formats the price line-->
         <div id="price">
         <h2 id="price" style="color: #D15567"><strong>$14.99</strong></h2>
         <p><strong>$17.99</strong></p>
         <p><strong>25% OFF</strong></p>
         </div>
-
         
         <div id="online"> <p>ONLINE EXCLUSIVE</p> </div>
 
-
         <div id="colourHeading"><p><strong>COLOR:</strong></p></div>
 
-        <div id="circles">
+        <!--Creates the different colour circle objects-->
+        <div id="color">
         <span class="dot first" style="background-color: #c62930;"></span>
         <span class="dot second" style="background-color: #6327f4;"></span>
         <span class="dot third" style="background-color: black;"></span>
@@ -59,7 +58,6 @@
         <span class="dot nineth" style="background-color: #dab595;"></span>
         <span class="dot tenth" style="background-color: #54c0f9;"></span>
         <span class="dot eleventh" style="background-color: #90fa4d;"></span>
-        <br>
         <span class="dot twelfth" style="background-color: #ea37b3;"></span>
         <span class="dot thirteenth" style="background-color: #dab595;"></span>
         <span class="dot fourteenth" style="background-color: #418d65;"></span>
@@ -68,39 +66,46 @@
         <span class="dot seventeenth" style="background-color: #69dad1;"></span>
         <span class="dot eighteenth" style="background-color: #c4c4c4;"></span>
         </div>
+        
+        <p><strong>Size Guide</strong></p>
+        <p><strong>Your Custom Fit</strong></p>
 
-        <h5><strong>Size Guide</strong></h5>
-        <h5><strong>Your Custom Fit</strong></h5>
-
-        <div id="btn">
+        <!--Add To Cart Button-->
+        <div id="cartBtns">
+        <button class="amount">0</button>
         <!-- Trigger/Open the Modal -->
-        <button onclick="document.getElementById('modal').style.display='block'"
+        <button onclick="document.getElementById('cart').style.display='block'"
         class="w3-button">Add To Cart</button>
         </div>
 
-        <!-- The Modal -->
-        <div id="modal" class="w3-modal">
-        <div class="w3-modal-content">
+        <!-- Add To Cart Button Modal -->
+        <div id="cart" class="w3-modal">
+        <div class="w3-modal-content w3-animate-zoom">
             <div class="w3-container">
-            <span onclick="document.getElementById('modal').style.display='none'"
+            <span onclick="document.getElementById('cart').style.display='none'"
             class="w3-button w3-display-topright">&times;</span>
             <p>Please add the quantity of the item you have selected</p>
-            <p>Text to add later</p>
+            <p>Test to see if updated</p>
             </div>
-        </div>
-        </div>
 
+            <!-- Agree and Cancel buttons inside popup -->
+            <button onclick="document.getElementById('Agree').style.display='block'"
+            class="w3-button-agree">Agree</button>
+            <button onclick="document.getElementById('Cancel').style.display='block'"
+            class="w3-button-cancel">Cancel</button>
+        </div>
+        </div>
 
         <hr>
 
-        <h4><strong>DETAILS</strong></h4>
+        <p class="details"><strong>DETAILS</strong></p>
         
         <hr>
         
-        <h5><strong>Need Help?</strong></h5>
-        <h5><strong>Shipping & Returns</strong></h5>
-
-        </div>
+        <footer>
+        <p><strong>Need Help?</strong></p>
+        <p><strong>Shipping & Returns</strong></p>
+        <footer>
 
         <script src="script.js"></script>
     </body>

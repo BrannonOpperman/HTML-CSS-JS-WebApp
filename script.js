@@ -1,5 +1,8 @@
-// AUTHOR DATE WEBSITE
-//DESCRIPTION
+// AUTHOR: Brannon Opperman
+// DATE OF LAST EDIT: 29 November 2019
+// WEBSITE LINK: https://zaioass1.000webhostapp.com
+
+// Dirty code that handles the clicking animations of the coloured circle objects
 
 $(".first").click(onFirstCircle);
 $(".second").click(onSecondCircle);
