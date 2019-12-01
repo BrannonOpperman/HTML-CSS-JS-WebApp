@@ -16,7 +16,7 @@ $(".nineth").click(onNinethCircle);
 $(".tenth").click(onTenthCircle);
 $(".eleventh").click(onEleventhCircle);
 $(".twelfth").click(onTwelfthCircle);
-$(".thirtenth").click(onThirteenthCircle);
+$(".thirteenth").click(onThirteenthCircle);
 $(".fourteenth").click(onFourteenthCircle);
 $(".fifteenth").click(onFifteenthCircle);
 $(".sixteenth").click(onSixteenthCircle);
