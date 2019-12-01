@@ -42,6 +42,9 @@ function onFirstCircle(){
     $(".seventeenth").removeClass("clicked");
     $(".eighteenth").removeClass("clicked");
     $(".first").toggleClass("clicked");
+    $(".colorName").html("Electric Red");
+    document.getElementById("cartBtn").textContent="Add To Cart";
+    document.getElementById("price").style.display = "block";
 }
 
 function onSecondCircle(){
@@ -63,6 +66,9 @@ function onSecondCircle(){
     $(".seventeenth").removeClass("clicked");
     $(".eighteenth").removeClass("clicked");
     $(".second").toggleClass("clicked");
+    $(".colorName").html("Murky Purple");
+    document.getElementById("cartBtn").textContent="Add To Cart";
+    document.getElementById("price").style.display = "block";
 }
 
 function onThirdCircle(){
@@ -84,6 +90,9 @@ function onThirdCircle(){
     $(".seventeenth").removeClass("clicked");
     $(".eighteenth").removeClass("clicked");
     $(".third").toggleClass("clicked");
+    $(".colorName").html("Pure Black");
+    document.getElementById("cartBtn").textContent="Add To Cart";
+    document.getElementById("price").style.display = "block";
 }
 
 function onFourthCircle(){
@@ -105,6 +114,9 @@ function onFourthCircle(){
     $(".seventeenth").removeClass("clicked");
     $(".eighteenth").removeClass("clicked");
     $(".fourth").toggleClass("clicked");
+    $(".colorName").html("Blinding White");
+    document.getElementById("cartBtn").textContent="Add To Cart";
+    document.getElementById("price").style.display = "block";
 }
 
 function onFifthCircle(){
@@ -126,6 +138,9 @@ function onFifthCircle(){
     $(".seventeenth").removeClass("clicked");
     $(".eighteenth").removeClass("clicked");
     $(".fifth").toggleClass("clicked");
+    $(".colorName").html("Citrus Orange");
+    document.getElementById("cartBtn").textContent="Add To Cart";
+    document.getElementById("price").style.display = "block";
 }
 
 function onSixthCircle(){
@@ -147,6 +162,9 @@ function onSixthCircle(){
     $(".seventeenth").removeClass("clicked");
     $(".eighteenth").removeClass("clicked");
     $(".sixth").toggleClass("clicked");
+    $(".colorName").html("Lemon Yellow");
+    document.getElementById("cartBtn").textContent="Add To Cart";
+    document.getElementById("price").style.display = "block";
 }
 
 function onSeventhCircle(){
@@ -168,6 +186,9 @@ function onSeventhCircle(){
     $(".seventeenth").removeClass("clicked");
     $(".eighteenth").removeClass("clicked");
     $(".seventh").toggleClass("clicked");
+    $(".colorName").html("Sky Blue");
+    document.getElementById("cartBtn").textContent="Add To Cart";
+    document.getElementById("price").style.display = "block";
 }
 
 function onEighthCircle(){
@@ -189,6 +210,9 @@ function onEighthCircle(){
     $(".seventeenth").removeClass("clicked");
     $(".eighteenth").removeClass("clicked");
     $(".eighth").toggleClass("clicked");
+    $(".colorName").html("Mysterious Blue");
+    document.getElementById("cartBtn").textContent="Add To Cart";
+    document.getElementById("price").style.display = "block";
 }
 
 function onNinethCircle(){
@@ -210,6 +234,9 @@ function onNinethCircle(){
     $(".seventeenth").removeClass("clicked");
     $(".eighteenth").removeClass("clicked");
     $(".nineth").toggleClass("clicked");
+    $(".colorName").html("Creamy Brown");
+    document.getElementById("cartBtn").textContent="Add To Cart";
+    document.getElementById("price").style.display = "block";
 }
 
 function onTenthCircle(){
@@ -231,6 +258,9 @@ function onTenthCircle(){
     $(".seventeenth").removeClass("clicked");
     $(".eighteenth").removeClass("clicked");
     $(".tenth").toggleClass("clicked");
+    $(".colorName").html("Baby Blue");
+    document.getElementById("cartBtn").textContent="Add To Cart";
+    document.getElementById("price").style.display = "block";
 }
 
 function onEleventhCircle(){
@@ -252,6 +282,9 @@ function onEleventhCircle(){
     $(".seventeenth").removeClass("clicked");
     $(".eighteenth").removeClass("clicked");
     $(".eleventh").toggleClass("clicked");
+    $(".colorName").html("Lumo Green");
+    document.getElementById("cartBtn").textContent="Add To Cart";
+    document.getElementById("price").style.display = "block";
 }
 
 function onTwelfthCircle(){
@@ -273,6 +306,9 @@ function onTwelfthCircle(){
     $(".seventeenth").removeClass("clicked");
     $(".eighteenth").removeClass("clicked");
     $(".twelfth").toggleClass("clicked");
+    $(".colorName").html("Barbie Pink");
+    document.getElementById("cartBtn").textContent="Add To Cart";
+    document.getElementById("price").style.display = "block";
 }
 
 function onThirteenthCircle(){
@@ -294,6 +330,9 @@ function onThirteenthCircle(){
     $(".seventeenth").removeClass("clicked");
     $(".eighteenth").removeClass("clicked");
     $(".thirteenth").toggleClass("clicked");
+    $(".colorName").html("Creamish Brown");
+    document.getElementById("cartBtn").textContent="Add To Cart";
+    document.getElementById("price").style.display = "block";
 }
 
 function onFourteenthCircle(){
@@ -315,6 +354,9 @@ function onFourteenthCircle(){
     $(".seventeenth").removeClass("clicked");
     $(".eighteenth").removeClass("clicked");
     $(".fourteenth").toggleClass("clicked");
+    $(".colorName").html("Grass Green");
+    document.getElementById("cartBtn").textContent="Add To Cart";
+    document.getElementById("price").style.display = "block";
 }
 
 function onFifteenthCircle(){
@@ -336,6 +378,9 @@ function onFifteenthCircle(){
     $(".seventeenth").removeClass("clicked");
     $(".eighteenth").removeClass("clicked");
     $(".fifteenth").toggleClass("clicked");
+    $(".colorName").html("Sad Grey");
+    document.getElementById("cartBtn").textContent="Add To Cart";
+    document.getElementById("price").style.display = "block";
 }
 
 function onSixteenthCircle(){
@@ -357,6 +402,9 @@ function onSixteenthCircle(){
     $(".seventeenth").removeClass("clicked");
     $(".eighteenth").removeClass("clicked");
     $(".sixteenth").toggleClass("clicked");
+    $(".colorName").html("Dirty Brown");
+    document.getElementById("cartBtn").textContent="Add To Cart";
+    document.getElementById("price").style.display = "block";
 }
 
 function onSeventeenthCircle(){
@@ -378,6 +426,9 @@ function onSeventeenthCircle(){
     $(".sixteenth").removeClass("clicked");
     $(".eighteenth").removeClass("clicked");
     $(".seventeenth").toggleClass("clicked");
+    $(".colorName").html("Lumo Blue");
+    document.getElementById("cartBtn").textContent="Add To Cart";
+    document.getElementById("price").style.display = "block";
 }
 
 function onEighteenthCircle(){
@@ -399,4 +450,31 @@ function onEighteenthCircle(){
     $(".sixteenth").removeClass("clicked");
     $(".seventeenth").removeClass("clicked");
     $(".eighteenth").toggleClass("clicked");
+    $(".colorName").html("Murky Grey");
+    document.getElementById("cartBtn").textContent="Add To Cart";
+    document.getElementById("price").style.display = "block";
 }
+
+//Handles the incrementing of the counter in the modal
+$(document).ready(function(){
+    $('.count').prop('disabled', true);
+       $(document).on('click','.plus',function(){
+        $('.count').val(parseInt($('.count').val()) + 1 );
+    });
+    $(document).on('click','.minus',function(){
+        $('.count').val(parseInt($('.count').val()) - 1 );
+            if ($('.count').val() <= 0) {
+                $('.count').val(0);
+            }
+        });
+    //Handles the correct functioning of the accept and cancel buttons and ensures they update the
+    //relevant values on click
+    $(document).on('click','.w3-button-cancel',function(){
+        $('.count').val(0);
+    });
+    $(document).on('click','.w3-button-agree',function(){
+        document.getElementById("amount").textContent=($('.count').val().toString());
+        $('.count').val(0);
+        document.getElementById("checkoutBtn").style.zIndex=1;
+    });
+ });

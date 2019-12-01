@@ -7,16 +7,19 @@
 <!DOCTYPE html>
 <html>
 
-    <!--Links this index to the style sheet as well as to a library used for the creation of the stars-->
+    <!-- Links this index to the style sheet as well as to other libraries used for the creation and animation of various elements -->
     <head>
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <title>Zaio Website</title>
     </head>
 
-    <body class="font">
+    <body class="text">
 
         <h1><Strong>HICKIES Originals</Strong></h1>
 
@@ -43,7 +46,9 @@
         
         <div id="online"> <p>ONLINE EXCLUSIVE</p> </div>
 
-        <div id="colourHeading"><p><strong>COLOR:</strong></p></div>
+        <div id="colourHeading">
+            <p><strong>COLOR: </strong><span class="colorName">No Color Selected</span></p>
+        </div>
 
         <!--Creates the different colour circle objects-->
         <div id="color">
@@ -59,7 +64,7 @@
         <span class="dot tenth" style="background-color: #54c0f9;"></span>
         <span class="dot eleventh" style="background-color: #90fa4d;"></span>
         <span class="dot twelfth" style="background-color: #ea37b3;"></span>
-        <span class="dot thirteenth" style="background-color: #dab595;"></span>
+        <span class="dot thirteenth" style="background-color: #dbb391;"></span>
         <span class="dot fourteenth" style="background-color: #418d65;"></span>
         <span class="dot fifteenth" style="background-color: #6f6975;"></span>
         <span class="dot sixteenth" style="background-color: #6e502b;"></span>
@@ -70,29 +75,34 @@
         <p><strong>Size Guide</strong></p>
         <p><strong>Your Custom Fit</strong></p>
 
-        <!--Add To Cart Button-->
+        <!--Quantity Circle & Add To Cart Button-->
         <div id="cartBtns">
-        <button class="amount">0</button>
+        <button><span id="amount">0</span></button>
         <!-- Trigger/Open the Modal -->
-        <button onclick="document.getElementById('cart').style.display='block'"
+        <button id="cartBtn" onclick="document.getElementById('cart').style.display='block'"
         class="w3-button">Add To Cart</button>
+        <button id="checkoutBtn">Checkout Now</button>
         </div>
 
         <!-- Add To Cart Button Modal -->
         <div id="cart" class="w3-modal">
         <div class="w3-modal-content w3-animate-zoom">
             <div class="w3-container">
-            <span onclick="document.getElementById('cart').style.display='none'"
-            class="w3-button w3-display-topright">&times;</span>
             <p>Please add the quantity of the item you have selected</p>
-            <p>Test to see if updated</p>
+            <p class="colorName">Color Name</p>
+            <div id="inc" class="qty mt-5">
+                    <span class="minus bg-black">-</span>
+                    <input type="number" class="count" name="qty" value="0">
+                    <span class="plus bg-black">+</span>
+            </div>
             </div>
 
             <!-- Agree and Cancel buttons inside popup -->
-            <button onclick="document.getElementById('Agree').style.display='block'"
+            <button onclick="document.getElementById('cart').style.display='none'"
             class="w3-button-agree">Agree</button>
-            <button onclick="document.getElementById('Cancel').style.display='block'"
+            <button onclick="document.getElementById('cart').style.display='none'"
             class="w3-button-cancel">Cancel</button>
+
         </div>
         </div>
 

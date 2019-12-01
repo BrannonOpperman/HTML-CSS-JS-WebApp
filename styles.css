@@ -3,10 +3,14 @@
     WEBSITE LINK: https://zaioass1.000webhostapp.com
 */
 /* Sets all the fonts to arial and centres everything into the middle of the page*/
-.font{
+.text{
     font-family: arial;
     max-width: 600px;
     margin: auto;
+}
+/*Hides the price div*/
+#price{
+    display:none;
 }
 /* Everything between here and <END> handles all the spacing and colours and font sizes of the various text items on the page */
 #price h2{
@@ -64,6 +68,10 @@ footer p{
 .clicked{
     box-shadow: 0 0 0 1.5pt #919191;
 }
+/*Creates some bottom padding to add space between the buttons and the <br> */
+#cartBtns{
+    height: 80px;
+}
 /*Formats the circle containing the number of items selected*/
 #cartBtns button:nth-of-type(1){
     background-color: white;
@@ -72,11 +80,10 @@ footer p{
     text-align: center;
     display: inline-block;
     font-size: 14px;
+    font-weight: bold;
     border-radius: 50px;
     padding: 14px;
     width: 12%;
-    font-weight: bold;
-    margin-bottom: 24px;
 }
 /*Formatting for the Add To Cart Button*/
 #cartBtns button:nth-of-type(2){
@@ -93,16 +100,46 @@ footer p{
     width: 55%;
     margin-left: 12px;
 }
+/*Formatting for the Checkout button*/
+#checkoutBtn{
+    position: relative;
+    display:inline-block;
+    background-color: black;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 18px 2px;
+    border-radius: 50px;
+    width: 55%;
+    left: 88px;
+    bottom: 57px;
+    z-index: -1;
+}
+/*Adds a hover over affect to the checkout button*/
+#checkoutBtn:hover{
+    background-color: #c4c4c4;
+    color:black;
+}
 /*Formats the popup*/
 .w3-modal-content{
     position: relative;
-    width: 200px;
-    height: 150px;
+    max-width: 400px;
+    height: 200px;
     border: 1px solid black;
 }
 /*Centres the heading of the popup */
-.w3-modal-content p:first-of-type{
+.w3-modal-content input:first-of-type{
     text-align: center;
+    pointer-events: none;
+}
+/*Formats the color name tag in the modal*/
+.w3-modal-content p:nth-of-type(2){
+    position: absolute;
+    top: 80px;
+    left: 90px;
 }
 /*Formatting for the Agree button in the popup*/
 .w3-modal-content .w3-button-agree{
@@ -125,4 +162,78 @@ footer p{
     color: black;
     text-align: center;
     border-radius: 6px;
+}
+/* The counter inside the popup modal */
+.qty .count {
+    color: black;
+    display: inline-block;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 30px;
+    padding: 0 2px;
+    min-width: 50px;
+    text-align: center;
+}
+/* The plus button inside the popup modal */
+.qty .plus {
+    cursor: pointer;
+    display: inline-block;
+    color: white;
+    width: 50px;
+    height: 50px;
+    font: 50px/1 Arial,sans-serif;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 50%;
+    background-color: black;
+    }
+/* The minus button inside the popup modal */
+.qty .minus {
+    cursor: pointer;
+    display: inline-block;
+    color: white;
+    width: 50px;
+    height: 50px;
+    font: 50px/1 Arial,sans-serif;
+    text-align: center;
+    margin: auto;
+    border-radius: 50%;
+    background-clip: padding-box;
+    background-color: black;
+}
+/* Positions the incrementing buttons and quantity inside the modal */
+#inc {
+    position: absolute;
+    text-align: center;
+    left: 180px;
+    bottom: 75px;
+}
+/* Prevents the mouse from clicking through the minus button in the popup */
+.minus:hover{
+    background-color: #53555f !important;
+}
+/* Prevents the mouse from clicking through the plus button in the popup */
+.plus:hover{
+    background-color: #53555f !important;
+}
+/*Prevent text selection*/
+span.bg-dark{
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+/* Placement of the increment value in the popup */
+#inc input{  
+    border: 0;
+    width: 2%;
+}
+nput::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+/* Prevents clicking into the value in the popup */
+input:disabled{
+    background-color:white;
 }
